@@ -1,0 +1,11 @@
+id,name,likelihood,impact,score,rating,nist_control,owner,status,mitigation
+R-001,Phishing Attack,4,4,16,HIGH,"IA-2, AT-2",IT Security,In Progress,Enforce MFA on all accounts. Quarterly phishing training.
+R-002,Misconfigured S3 Bucket,3,5,15,HIGH,"CM-6, AU-2",Cloud Engineering,Planned,Enable AWS Block Public Access. Config rules to alert on public buckets.
+R-003,Ransomware Attack,3,5,15,HIGH,"CP-9, IR-4, SI-3",IT Security,In Progress,Immutable backups tested monthly. EDR on all endpoints. IR runbooks.
+R-006,Third-Party Vendor Breach,3,4,12,HIGH,"SR-3, SA-9",GRC / Legal,In Progress,Annual vendor assessments. Contractual breach notification clauses.
+R-007,SQL Injection Vulnerability,3,4,12,HIGH,"SI-10, SI-2, SA-11",Application Security,In Progress,Cloudflare WAF blocks OWASP Top 10. SAST scanning in CI/CD pipeline.
+R-009,Shadow IT - Unapproved SaaS,4,3,12,HIGH,"CM-8, SA-9, AC-20",IT Security,Planned,Cloudflare Gateway detects unapproved apps. Approved software catalogue published.
+R-010,Business Email Compromise,3,4,12,HIGH,"AT-2, SI-8",Finance + IT Security,In Progress,DMARC/DKIM/SPF enforced. Dual authorisation for payments over 5000.
+R-004,Insider Threat - Data Exfiltration,2,5,10,HIGH,"AC-6, AU-9, PS-4",HR + IT Security,Implemented,Least privilege RBAC. Session recording on admin accounts. 90-day access reviews.
+R-005,DDoS Platform Outage,3,3,9,MEDIUM,"SC-5, CP-8",Platform Engineering,Implemented,Cloudflare Magic Transit enabled. Auto-scaling configured. WAF rate limiting.
+R-008,GDPR Non-Compliance,2,4,8,MEDIUM,"PT-1, PT-2, PM-19",DPO / Legal,Implemented,DSAR workflow implemented. DPO appointed. Annual GDPR training.
